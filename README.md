@@ -1,4 +1,4 @@
-<h1 align=center>Backend Developer: Technical Assessment</h1>
+<h1 align=center>C++ Programmer Technical test</h1>
 
 <div align=center>
 <a href="#description">Description</a> |
