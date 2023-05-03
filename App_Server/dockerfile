@@ -1,0 +1,12 @@
+
+FROM alpine:latest
+
+RUN apk add --no-cache build-base
+COPY . /usr/src/server
+WORKDIR /usr/src/server
+
+RUN cc Server.cpp -lstdc++ -o Server
+
+CMD ["./Server"]
+
+EXPOSE 41123

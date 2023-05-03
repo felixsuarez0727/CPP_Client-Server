@@ -1,0 +1,10 @@
+
+FROM alpine:latest
+
+RUN apk add --no-cache build-base
+COPY . /usr/src/client
+WORKDIR /usr/src/client
+
+RUN cc Client.cpp -lstdc++ -o Client
+
+CMD ["./Client"]
